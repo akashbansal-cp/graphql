@@ -25,7 +25,8 @@ await mongoose.connect("mongodb+srv://username:whatpassword@cluster0.dytix.mongo
 
 const {url} = await startStandaloneServer(server,{
     listen:{
-        port:4001
+        host:process.env.URL,
+        port:process.env.PORT
     }
 })
 
