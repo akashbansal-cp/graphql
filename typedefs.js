@@ -1,7 +1,6 @@
-export const typeDefs = `
+export const typedefs = `
     type Query{
-        hello: String,
-        users: [_user]
+        users(tgid:ID): [_user]
     }
     type _user{
         tgid: ID
